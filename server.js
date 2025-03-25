@@ -20,8 +20,8 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 
-app.use("/api/items", itemRoutes);
-app.use("/api/restaurants", restaurantRoutes);
+app.use("api/items", itemRoutes);
+app.use("api/restaurants", restaurantRoutes);
 
 app.listen(PORT, function () {
     connectDB();
