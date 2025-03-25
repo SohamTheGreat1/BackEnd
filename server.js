@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: ["http://localhost:3002", "https://front-end-psi-nine.vercel.app/"],
+    origin: "https://front-end-psi-nine.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
